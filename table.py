@@ -13,7 +13,6 @@ df = df[df['year'] == 2019]
 df['id'] = df['iso_alpha3']
 df.set_index('id', inplace=True, drop=False)
 print(df.columns)
-
 # -------------------------------------------------------------------------------------
 # App layout
 app = dash.Dash(__name__, prevent_initial_callbacks=True) # this was introduced in Dash version 1.12.0
